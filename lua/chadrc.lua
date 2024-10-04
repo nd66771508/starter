@@ -6,12 +6,35 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "chocolate",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
+
+M.ui = {
+  cmp = {
+    lspkind_text = true,
+    style = "flat_dark",
+    format_colors = {
+       tailwind = true,
+     },
+
+  },
+}
+
+M.telescope = {
+  style = "bordered",
+}
+
+ M.ui = {
+   statusline = {
+     theme = "default", 
+     separator_style = "round",
+   },
+}
+
 
 return M
